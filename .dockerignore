@@ -1,0 +1,5 @@
+build
+docs
+pytemplate.egg-info
+tests
+.cache

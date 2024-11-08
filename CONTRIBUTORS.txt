@@ -1,0 +1,14 @@
+# This is the official list of topFIND project contributors.
+# The LICENSE file lists the copyright holders; this file
+# lists people.  For example, Vicomtech employees are listed here
+# but not in LICENSE, because Vicomtech holds the copyright.
+#
+#
+# Names should be added to this file as:
+#     Name <email address>
+Ander    acejudo@vicomtech.org
+Teresa   tgarcianavarro@vicomtech.org
+Amaia    acalvo@vicomtech.org
+Garazi   gartola@vicomtech.org
+Yone     ytellechea@vicomtech.org
+#     Info <info@vicomtech.org>

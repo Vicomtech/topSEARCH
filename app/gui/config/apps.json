@@ -1,0 +1,9 @@
+{
+  "breast_cancer": {
+    "queries": ["breast", " cancer"],
+    "lang": "en",
+    "country": "us",
+    "queries_synonyms": [["mammary"], ["tumor", "  neoplasm", "  carcinoma"]],
+    "filter_values": {"keyword_search": true, "score": 3.0, "privacy_policy": true, "free": true, "developer_has_website": true, "recent_update": 6, "language": "en"},
+    "metadata": ["appId", "title", "description", "url", "genres", "developerWebsite", "score", "ratings", "currentVersionReleaseDate", "languageCodesISO2A", "os", "privacyPolicy", "free", "contentRating"]},
+  "breast_cancer_english": {"queries": ["breast", " cancer"], "lang": "en", "country": "us", "queries_synonyms": [["mammary"], ["tumor", "  neoplasm", "  carcinoma"]], "filter_values": {"keyword_search": true, "score": 3.0, "privacy_policy": true, "free": true, "developer_has_website": true, "recent_update": 6, "language": "en"}, "metadata": ["appId", "title", "description", "url", "genres", "developerWebsite", "score", "ratings", "currentVersionReleaseDate", "languageCodesISO2A", "os", "privacyPolicy", "free", "contentRating"]}, "Prevenci\u00f3n": {"queries": ["Prevenci\u00f3n"], "lang": "es", "country": "es", "queries_synonyms": [["Precauci\u00f3n", " anticipaci\u00f3n", " vigilancia"]], "filter_values": {"keyword_search": true}, "metadata": ["appId", "title", "description", "url", "genres", "developerWebsite", "score", "ratings", "currentVersionReleaseDate", "languageCodesISO2A", "os", "privacyPolicy", "free", "contentRating"]}}
