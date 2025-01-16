@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-    topFIND
+    topSEARCH
 
     @author: tgarcianavarro - Vicomtech Foundation, Basque Research and Technology Alliance (BRTA)
     @author: afernandezc - Vicomtech Foundation, Basque Research and Technology Alliance (BRTA)

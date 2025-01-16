@@ -32,7 +32,7 @@ class AppFilter:
         self.apply_filter = apply_filters
         # Available filters
         self.filters = {
-            'keywords_search': self.keyword_search,
+            'keyword_search': self.keyword_search,
             'privacy_policy': self.check_privacy_policy,
             'score': self.check_score,
             'free': self.check_price,

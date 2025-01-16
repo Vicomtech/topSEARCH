@@ -13,11 +13,11 @@ import pandas as pd
 import streamlit as st
 from matplotlib import pyplot as plt
 
-from app.topfind.utils.plots import likes_rate_metric
+from app.topsearch.utils.plots import likes_rate_metric
 
 # Page configuration
 st.set_page_config(
-    page_title="topFIND Analytics",
+    page_title="topSEARCH Analytics",
     layout="wide"
 )
 

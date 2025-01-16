@@ -1,0 +1,32 @@
+image: python:3.9
+
+test:
+  stage: test
+  script:
+  - pip install -r requirements.txt
+  - python tests/test.py
+
+test_doc:
+  stage: test
+  script:
+  - pip install -U sphinx
+  - pip install sphinx-rtd-theme
+  - sphinx-apidoc -o docs/source topSEARCH
+  only:
+  - branches
+
+pages:
+  stage: deploy
+  script:
+  - pip install -U sphinx
+  - pip install sphinx-rtd-theme
+  - python setup.py install
+  - pip install -r requirements.txt
+  - sphinx-apidoc -o docs/source topSEARCH
+  - mkdir public
+  - pip install myst_parser
+  - sphinx-build -b html docs/source public
+
+  artifacts:
+    paths:
+    - public

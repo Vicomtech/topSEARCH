@@ -10,11 +10,11 @@ from app.gui.modules.videos import videos
 
 def write():
     """
-    Displays a Streamlit app interface for the topFIND project. It sets the page configuration, displays the topFIND
+    Displays a Streamlit app interface for the topSEARCH project. It sets the page configuration, displays the topSEARCH
     logo, and allows users to input project-specific metadata categories. It also displays tabs for Apps, Videos,
     Podcasts, and News, and calls the apps() function to display the corresponding content for the selected tab.
     """
-    st.set_page_config(page_title='topFIND', page_icon="app/gui/utils/topFIND_icon.png", layout="centered",
+    st.set_page_config(page_title='topSEARCH', page_icon="app/gui/utils/topSEARCH_icon.png", layout="centered",
                        initial_sidebar_state="collapsed"
                        )
 
@@ -26,7 +26,7 @@ def write():
                """
     st.markdown(hide_default_format, unsafe_allow_html=True)
 
-    logo = Image.open("app/gui/utils/topFIND_logo.png", "r")
+    logo = Image.open("app/gui/utils/topSEARCH_logo.png", "r")
     st.image(logo, width=750)
 
     st.write("## Inputs")

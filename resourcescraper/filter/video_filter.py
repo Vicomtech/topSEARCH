@@ -91,13 +91,17 @@ class VideoFilter:
         """
         res = []
         for index, video in self.videos.iterrows():
-            if video["title"]:
+            try:
                 match = self.text_has_language(str(video["title"]), value)
-                if match is False:
-                    match = self.text_has_language(str(video["description"]), value)
                 res.append(match)
-            else:
-                res.append(True)
+            except:
+                try:
+                    match = self.text_has_language(str(video["description"]), value)
+                    res.append(match)
+                except:
+                    res.append(True)
+
+
         return self.videos.loc[res]
 
     @staticmethod
@@ -114,7 +118,7 @@ class VideoFilter:
             bool: True if the specified language is detected in the text, False otherwise.
         """
         detected_language = langdetect.detect(text)
-        if detected_language[0] == language:
+        if detected_language == language:
             return True
         else:
             return False

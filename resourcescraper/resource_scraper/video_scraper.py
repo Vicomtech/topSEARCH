@@ -11,7 +11,7 @@ from resourcescraper.resource_scraper.scraper import Scraper
 from resourcescraper.utils.timeout import timeout
 
 api = YoutubeAPI()
-load_dotenv(".topfind.env")
+load_dotenv(".topSEARCH.env")
 
 
 class VideoScraper(Scraper):

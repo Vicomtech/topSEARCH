@@ -17,9 +17,9 @@ from PIL import Image
 
 from app.gui.utils.filters import input_app_filters, input_video_filters, input_podcast_filters, input_news_filters
 from app.gui.utils.input_processing import transform_dictionary, process_filters
-from app.topfind.utils.plots import load_time_table, plot_dataframe_lengths, transform_byte_objects, \
+from app.topsearch.utils.plots import load_time_table, plot_dataframe_lengths, transform_byte_objects, \
     plot_count_over_time
-from app.topfind.utils.post_filters import app_filter, video_filter, podcast_filter, news_filter
+from app.topsearch.utils.post_filters import app_filter, video_filter, podcast_filter, news_filter
 from resourcescraper.filter.app_filter import AppFilter
 from resourcescraper.filter.news_filter import NewsFilter
 from resourcescraper.filter.podcast_filter import PodcastFilter
@@ -207,11 +207,11 @@ def write():
     """
     Creates the Streamlit page.
     """
-    st.set_page_config(page_title='topFIND', page_icon="utils/topFIND_icon.png", layout="wide",
+    st.set_page_config(page_title='topSEARCH', page_icon="utils/topSEARCH_icon.png", layout="wide",
                        initial_sidebar_state="collapsed"
                        )
 
-    logo = Image.open("app/topfind/utils/topFIND_icon.png", "r")
+    logo = Image.open("app/topsearch/utils/topSEARCH_icon.png", "r")
 
 
     hide_default_format = """
@@ -471,7 +471,6 @@ def load_videos(query: str, filters:list=None, lang: str='it') -> Tuple[Any, flo
     start = time.time()
 
     videos = VideoScraper([query], api_service_name, api_version, groups=groups)()
-    print("Total apps found: " + str(len(videos)))
     # videos.to_csv('../../resources/videos/videos.csv', index=False)
     videos = VideoFilter(videos, filters, [query], [])()
     # videos.to_csv('../../resources/videos/videos_filtered.csv', index=False)

@@ -13,12 +13,12 @@ import seaborn as sns
 import streamlit as st
 from matplotlib import pyplot as plt
 
-from app.topfind.utils.plots import plot_cumulative, plot_genre_counts, plot_video_tags, plot_common_words, \
+from app.topsearch.utils.plots import plot_cumulative, plot_genre_counts, plot_video_tags, plot_common_words, \
     plot_news_keyword_counts, likes_rate_metric, create_stacked_distribution_plot
 
 # Page configuration
 st.set_page_config(
-    page_title="topFIND Analytics",
+    page_title="topSEARCH Analytics",
     layout="wide"
 )
 

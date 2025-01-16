@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'topFIND'
+project = 'topSEARCH'
 copyright = '2023, Ander Cejudo, Garazi Artola, Teresa García, Amaia Calvo, Yone Tellechea'
 author = 'Ander Cejudo, Garazi Artola, Teresa García, Amaia Calvo, Yone Tellechea'
 

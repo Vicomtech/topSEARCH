@@ -1,9 +1,9 @@
 <div style="text-align: center;">
-    <img src="app/gui/utils/topFIND_icon.png" alt="topFIND logo" width="350">
+    <img src="app/gui/utils/topSEARCH_icon.png" alt="topSEARCH logo" width="750">
 </div>
 
 ## Description
-topFIND is a tool for efficiently retrieving, organizing, and storing various types of online resources, including news, apps, videos, and podcasts.
+topSEARCH is a tool for efficiently retrieving, organizing, and storing various types of online resources, including news, apps, videos, and podcasts.
 
 ## Table of Contents
 - [Features](#features)
@@ -21,7 +21,7 @@ topFIND is a tool for efficiently retrieving, organizing, and storing various ty
 - [Contact](#contact)
 
 ## Features
-The main features of topFIND are listed below:
+The main features of topSEARCH are listed below:
 - **Selection of Resource Types**  
   Users can choose from up to four different resource types, allowing for customized resource selection.
 
@@ -39,11 +39,11 @@ resources they're working with at any time.
 This feature makes it easy to download and share all chosen resources in one organized package.
 
 ## Resource sources
-topFIND is a versatile tool designed to aggregate various types of resources from popular platforms, 
+topSEARCH is a versatile tool designed to aggregate various types of resources from popular platforms, 
 helping users access diverse content with ease. Whether you're looking for videos, news articles, 
-podcasts, or apps, topFIND simplifies the process by pulling resources from multiple sources, 
+podcasts, or apps, topSEARCH simplifies the process by pulling resources from multiple sources, 
 reducing the need to search different platforms manually. Below there is a table showcasing the types 
-of resources topFIND retrieves and the platforms they come from:
+of resources topSEARCH retrieves and the platforms they come from:
 
 | Resource Type | Source Platform | Webpage                                          |
 |---------------|-----------------|--------------------------------------------------|
@@ -58,11 +58,11 @@ of resources topFIND retrieves and the platforms they come from:
 
 ## Screenshots
 The home page is as follows: 
-![Home page](docs/readme_resources/topFIND_inicio.png)
+![Home page](docs/readme_resources/topSEARCH_inicio.png)
 
 The output is displayed as follows:
 
-![Search result example](docs/readme_resources/output_topFIND.png)
+![Search result example](docs/readme_resources/topSEARCH_output.png)
 
 ## Demo Video:
 
@@ -97,7 +97,7 @@ The output is displayed as follows:
 
 ## Quickstart
 
-Get started with the topFIND tool.
+Get started with the topSEARCH tool.
 
 ### Prerequisites
 
@@ -112,8 +112,8 @@ Ensure you have the following installed:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Vicomtech/topFIND.git
-   cd topFIND
+    git clone https://github.com/Vicomtech/topSEARCH.git
+    cd topSEARCH
 2. Create a virtual environment: 
    - In the project directory, create a virtual environment to manage dependencies. Use the following command:
       ```bash
@@ -136,12 +136,12 @@ To run the application, you have two options: using the terminal or a run config
 
 #### 1. Terminal option
 1. Add your API keys:
-   - Copy the `.env.example` file and rename it to `.topfind.env`.
-   - Open the `.topfind.env` file and fill in the required API keys.
+   - Copy the `.env.example` file and rename it to `.topsearch.env`.
+   - Open the `.topsearch.env` file and fill in the required API keys.
    - Save the file. These keys are necessary for the application to interact with external services.
 2. Start the Streamlit server:
     ```bash
-     python -m streamlit run app/topfind/topfind.py
+     python -m streamlit run app/topsearch/topsearch.py
 3. A browser window will automatically open, displaying the running Streamlit app. If it doesn't open automatically, 
 you can manually navigate to the following [URL](http://localhost:8501).
 
@@ -168,6 +168,10 @@ you can manually navigate to the following [URL](http://localhost:8501).
 4. **Click Create credentials, then select API key from the menu.**
    1. Click Create Credentials at the top of the page, then choose API Key from the dropdown menu.
 ![Create credentials](docs/readme_resources/googlecloud3.png) ![API key](docs/readme_resources/googlecloud4.png)
+5. **Activate the API key**
+   1. Click this [link](https://console.developers.google.com/apis/api/youtube.googleapis.com/overview)
+   2. Click **Enable**
+![Create credentials](docs/readme_resources/enable_key.png) 
 
 #### Spotify:
 1. **Create a Spotify Developer Account**  
@@ -196,7 +200,7 @@ you can manually navigate to the following [URL](http://localhost:8501).
 The repository is structured as follows:
 
 ```
-topFIND
+topSEARCH
 │
 ├── app                                     
 │   ├── deploy/
@@ -213,12 +217,12 @@ topFIND
 │       └── ...
 │   ├── scripts/
 │       └── ...
-│   └── topfind/
+│   └── topsearch/
 │       ├── pages
 │           └── ...
 │       ├── utils
 │           └── ...
-│       └── 1_Search.py
+│       └── topsearch.py
 |
 ├── docs  
 │   └── source/  
@@ -276,13 +280,13 @@ The tool license is provided in `LICENSE.docx`. As this tool includes serveral p
 * Garazi Artola
 
 ## Contact
-For any inquiries, feedback, or suggestions regarding the topFIND project, please address them to:
+For any inquiries, feedback, or suggestions regarding the topSEARCH project, please address them to:
 
 **Name:** Ander Cejudo
 
 **Email:** acejudo@vicomtech.org
 
-![Logo](docs/readme_resources/topFIND_logo.png)
+![Logo](docs/readme_resources/topSEARCH_logo.png)
 
 [streamlit]: https://streamlit.io/
 [pandas]: https://pandas.pydata.org/
